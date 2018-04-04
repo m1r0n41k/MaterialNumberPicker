@@ -43,7 +43,7 @@ Both XML and programmatic instanciations are supported :
     app:mnpMaxValue="50"
     app:mnpMinValue="1"
     app:mnpEditable="false"
-    app:mnpFontname="Hand.ttf"
+    app:mnpFontFamily="@font/roboto_thin"
     app:mnpSeparatorColor="@color/colorAccent"
     app:mnpTextColor="@color/colorPrimary"
     app:mnpTextSize="16sp"
@@ -64,7 +64,7 @@ val numberPicker = MaterialNumberPicker(
     textStyle = Typeface.BOLD_ITALIC,
     editable = false,
     wrapped = false,
-    fontName = "Hand.ttf",
+    fontFamily = R.font.roboto_thin,
     formatter = NumberPicker.Formatter {
         return@Formatter "Value $it"
     }
