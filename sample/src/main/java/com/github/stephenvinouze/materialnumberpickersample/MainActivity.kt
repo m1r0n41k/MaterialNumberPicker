@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     private val defaultButton: Button by lazy { findViewById<Button>(R.id.default_number_picker_button) }
     private val simpleButton: Button by lazy { findViewById<Button>(R.id.simple_number_picker_button) }
     private val customButton: Button by lazy { findViewById<Button>(R.id.custom_number_picker_button) }
+    private val custom2Button: Button by lazy { findViewById<Button>(R.id.custom_2_number_picker_button) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,6 +51,23 @@ class MainActivity : AppCompatActivity() {
                     formatter = NumberPicker.Formatter {value ->
                         return@Formatter "Value $value"
                     }
+            )
+            presentPickerInAlert(numberPicker, getString(R.string.alert_custom_title))
+        }
+
+        custom2Button.setOnClickListener {
+            val numberPicker = MaterialNumberPicker(
+                    context = this,
+                    minValue = 1,
+                    maxValue = 50,
+                    value = 10,
+                    separatorColor = ContextCompat.getColor(this, R.color.colorAccent),
+                    textColor = ContextCompat.getColor(this, R.color.colorPrimary),
+                    textSize = resources.getDimensionPixelSize(R.dimen.numberpicker_textsize),
+                    textStyle = Typeface.BOLD_ITALIC,
+                    editable = false,
+                    wrapped = false,
+                    fontFamily = R.font.roboto_thin
             )
             presentPickerInAlert(numberPicker, getString(R.string.alert_custom_title))
         }

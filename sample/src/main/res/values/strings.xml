@@ -4,5 +4,6 @@
     <string name="alert_default_title">Default NumberPicker</string>
     <string name="alert_simple_title">Simple MaterialNumberPicker</string>
     <string name="alert_custom_title">Custom MaterialNumberPicker</string>
+    <string name="alert_custom2_title">Custom FontFamily MaterialNumberPicker</string>
     <string name="picker_value">Picked value %d</string>
 </resources>

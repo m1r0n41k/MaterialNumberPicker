@@ -23,4 +23,11 @@
         android:layout_marginTop="16dp"
         android:text="@string/alert_custom_title" />
 
+    <Button
+        android:id="@+id/custom_2_number_picker_button"
+        style="@style/Button"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_thin"
+        android:text="@string/alert_custom2_title" />
+
 </LinearLayout>

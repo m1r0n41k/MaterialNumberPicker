@@ -44,6 +44,7 @@ Both XML and programmatic instanciations are supported :
     app:mnpMinValue="1"
     app:mnpEditable="false"
     app:mnpFontname="Hand.ttf"
+    app:mnpFontFamily="@font/roboto"
     app:mnpSeparatorColor="@color/colorAccent"
     app:mnpTextColor="@color/colorPrimary"
     app:mnpTextSize="16sp"

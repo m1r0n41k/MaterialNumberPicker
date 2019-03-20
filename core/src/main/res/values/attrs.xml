@@ -16,7 +16,8 @@
         </attr>
         <attr name="mnpEditable" format="boolean" />
         <attr name="mnpWrapped" format="boolean" />
-        <attr name="mnpFontname" format="string" />
+        <attr name="mnpFontName" format="string" />
+        <attr name="mnpFontFamily" format="reference" />
     </declare-styleable>
 
 </resources>
